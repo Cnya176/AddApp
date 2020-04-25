@@ -1,0 +1,35 @@
+::-webkit-scrollbar { width: 0;}
+
+body {
+	margin: 0px;
+	height: 100vh;
+	width: 100%;
+	background-color: white;
+}
+
+header {
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+}
+
+.TopHeader {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+	background-image: url(Styles\img\up.svg);
+}
+
+.TopHeader > h1{
+	position: relative;
+	z-index: 5;
+	margin: 0px;
+}
+
+.TopHeader > img {
+	position: absolute;
+	height: 50vh;
+	right: -20px;
+	z-index: 4;
+}
