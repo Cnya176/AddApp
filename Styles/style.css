@@ -18,13 +18,27 @@ header {
 	width: 100vw;
 	height: 100vh;
 	margin: 0px;
-	background-image: url(Styles\img\up.svg);
 }
 
 .TopHeader > h1{
-	position: relative;
-	z-index: 5;
+	position: absolute;
 	margin: 0px;
+	width: 16vw;
+	height: 117px;
+	left: 42vw;
+	top: 0px;
+	z-index: 999;
+	background: linear-gradient(180deg, #FFC700 0%, #520099 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: SF Pro Text;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 96px;
+	line-height: 112px;
+	display: flex;
+	align-items: center;
+	text-align: center;
 }
 
 .TopHeader > img {
