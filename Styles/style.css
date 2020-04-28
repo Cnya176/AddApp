@@ -39,7 +39,6 @@ header {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	text-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
 
 .TopHeader > img{
@@ -231,7 +230,25 @@ img.cloudR {
 img.UFO {
 	animation: bounce 2s infinite alternate;
 }
-
+.chuzhak {
+	position: absolute;
+	top: 13vw;
+	left: 12vw;
+	transform: rotate(50deg);
+}
+.chuzhak img:nth-child(1){
+	width: 10vw;
+	position: absolute;
+	z-index: 18;
+	left: 6vw;
+    top: 3.5vw;
+    animation: head 2s infinite alternate;
+}
+.chuzhak img:nth-child(2){
+	width: 20vw;
+	position: absolute;
+	z-index: 17;
+}
 @keyframes cloudL {
   0% {
   	transform: translate(2px, 0px);
@@ -315,4 +332,12 @@ img.UFO {
 		transform: translateY(10px);
 	}
 
+}
+@keyframes head {
+	0% {
+		transform: rotate(9deg);
+	}
+	100% {
+		transform: rotate(-9deg);
+	}
 }
