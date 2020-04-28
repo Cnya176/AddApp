@@ -23,9 +23,9 @@ header {
 .TopHeader > h1{
 	position: absolute;
 	margin: 0px;
-	width: 16vw;
-	height: 117px;
-	left: 42vw;
+	width: 17vw;
+	height: 5vw;
+	left: 43vw;
 	top: 0px;
 	z-index: 999;
 	background: linear-gradient(180deg, #FFC700 0%, #520099 100%);
@@ -34,16 +34,178 @@ header {
 	font-family: SF Pro Text;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 96px;
+	font-size: 4vw;
 	line-height: 112px;
 	display: flex;
 	align-items: center;
 	text-align: center;
 }
 
-.TopHeader > img {
+.TopHeader > img{
 	position: absolute;
-	height: 50vh;
-	right: -20px;
-	z-index: 4;
+	height: 30vw;
+	right: 0vw;
+}
+.stars {
+	position: absolute;
+	margin: 0px;
+	right: 0vw;
+}
+.stars img:nth-child(1) {
+	position: absolute;
+	right: 0px;
+	width: 62vw;
+
+}
+.stars img:nth-child(2) {
+	position: absolute;
+	width: 3vw;
+	right: 12vw;
+	top: 7vw;
+}
+.shadow-point1 {
+	position: absolute;
+  	width: 1px;
+  	height: 1px;
+  	right: 13.55vw;
+	top: 8.1vw;
+	background-color: white;
+	border-radius: 50%;
+	animation: shadow 1s infinite alternate;
+}
+.shadow-point2 {
+	position: absolute;
+  	width: 1px;
+  	height: 1px;
+  	right: 59.5vw;
+  	top: 1.4vw;
+	background-color: white;
+	border-radius: 50%;
+	animation: shadow 0.8s infinite alternate;
+}
+
+.shadow-point3{
+	position: absolute;
+  	width: 1px;
+  	height: 1px;
+  	right: 1.1vw;
+  	top: 0.8vw;
+	border-radius: 30%;
+	transform: rotate(45deg);
+	animation: shadow_two 1s infinite alternate;
+}
+.shadow-point4{
+	position: absolute;
+  	width: 1px;
+  	height: 1px;
+  	right: 3.4vw;
+  	top: 9.5vw;
+	border-radius: 30%;
+	transform: rotate(45deg);
+	animation: shadow_big 3s infinite alternate;
+}
+.shadow-point5{
+	position: absolute;
+  	width: 1px;
+  	height: 1px;
+  	right: 39.6vw;
+  	top: 2.19vw;
+	border-radius: 30%;
+	transform: rotate(45deg);
+	animation: shadow_two 2s infinite alternate;
+}
+.shadow-point6{
+	position: absolute;
+  	width: 1px;
+  	height: 1px;
+  	right: 0.95vw;
+  	top: 4.5vw;
+	border-radius: 30%;
+	transform: rotate(45deg);
+	animation: shadow_two 2s infinite alternate;
+}
+.shadow-point7{
+	position: absolute;
+  	width: 1px;
+  	height: 1px;
+  	right: 29.75vw;
+  	top: 1.25vw;
+  	background-color: white;
+	border-radius: 30%;
+	transform: rotate(45deg);
+	animation: shadow_two 2s infinite alternate;
+}
+.square {
+	position: absolute;
+	top: 0;
+}
+.square img:nth-child(1) {
+	position: absolute;
+	top: 40vw;
+	width: 20vw;
+	left: 42.5vw;
+	transition: 0.9s;
+}
+.square img:nth-child(2) {
+	position: absolute;
+	top: 41.5vw;
+	width: 20vw;
+	left: 42.5vw;
+	transition: 0.5s;
+}
+.square img:nth-child(3) {
+	position: absolute;
+	top: 43vw;
+	width: 20vw;
+	left: 42.5vw;
+	transition: 0.3s;
+}
+.square:hover img:nth-child(1){
+	transform: translate(0px, -100px);
+    opacity: 1;
+}
+.square:hover img:nth-child(2){
+	transform: translate(0px, -60px);
+    opacity: .8;
+}
+.square:hover img:nth-child(3){
+	transform: translate(0px, -30px);
+    opacity: .6;
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: 0 0 37px 5px white;
+  }
+  to {
+    box-shadow: 0 0 55px 10px white;
+  }
+}
+
+@keyframes shadow_two {
+  from {
+    box-shadow: 0 0 0px 0px white;
+  }
+  to {
+    box-shadow: 0 0 10px 10px white;
+  }
+}
+
+@keyframes shadow_big {
+  from {
+    box-shadow: 0 0 0px 0px white;
+  }
+  to {
+    box-shadow: 0 0 90px 50px white;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes bounce {
+  from {
+    margin-top: 0px;
+  }
+  to {
+    margin-top: -20px;
+  }
 }
