@@ -142,22 +142,22 @@ header {
 .square img:nth-child(1) {
 	position: absolute;
 	top: 40vw;
-	width: 20vw;
-	left: 42.5vw;
+	width: 9vw;
+	left: 44.5vw;
 	transition: 0.9s;
 }
 .square img:nth-child(2) {
 	position: absolute;
-	top: 41.5vw;
-	width: 20vw;
-	left: 42.5vw;
+	top: 41vw;
+	width: 9vw;
+	left: 44.5vw;
 	transition: 0.5s;
 }
 .square img:nth-child(3) {
 	position: absolute;
-	top: 43vw;
-	width: 20vw;
-	left: 42.5vw;
+	top: 42vw;
+	width: 9vw;
+	left: 44.5vw;
 	transition: 0.3s;
 }
 .square:hover img:nth-child(1){
@@ -174,22 +174,22 @@ header {
 }
 .squareblue img:nth-child(1){
 	position: absolute;
-	width: 10vw;
+	width: 5vw;
 	top: 6vw;
 	left: 3vw;
 	animation: square_bounce1 0.7s infinite alternate;
 }
 .squareblue img:nth-child(2){
 	position: absolute;
-	width: 10vw;
-	top: 5vw;
+	width: 5vw;
+	top: 5.5vw;
 	left: 3vw;
 	animation: square_bounce2 0.7s infinite alternate;
 }
 .squareblue img:nth-child(3){
 	position: absolute;
-	width: 10vw;
-	top: 7vw;
+	width: 5vw;
+	top: 6.5vw;
 	left: 3vw;
 	animation: square_bounce3 0.7s infinite alternate;
 }
