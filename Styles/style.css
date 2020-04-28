@@ -25,7 +25,7 @@ header {
 	margin: 0px;
 	width: 17vw;
 	height: 5vw;
-	left: 43vw;
+	left: 45vw;
 	top: 0px;
 	z-index: 999;
 	background: linear-gradient(180deg, #FFC700 0%, #520099 100%);
@@ -39,6 +39,7 @@ header {
 	display: flex;
 	align-items: center;
 	text-align: center;
+	text-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
 
 .TopHeader > img{
@@ -172,6 +173,94 @@ header {
 	transform: translate(0px, -30px);
     opacity: .6;
 }
+.squareblue img:nth-child(1){
+	position: absolute;
+	width: 10vw;
+	top: 6vw;
+	left: 3vw;
+	animation: square_bounce1 0.7s infinite alternate;
+}
+.squareblue img:nth-child(2){
+	position: absolute;
+	width: 10vw;
+	top: 5vw;
+	left: 3vw;
+	animation: square_bounce2 0.7s infinite alternate;
+}
+.squareblue img:nth-child(3){
+	position: absolute;
+	width: 10vw;
+	top: 7vw;
+	left: 3vw;
+	animation: square_bounce3 0.7s infinite alternate;
+}
+.squareRed img:nth-child(1){
+	position: absolute;
+	width: 7vw;
+	top: 28vw;
+	right: 4vw;
+	animation: square_bounce2 0.7s infinite alternate;
+}
+.squareRed img:nth-child(2){
+	position: absolute;
+	width: 7vw;
+	top: 29vw;
+	right: 4vw;
+	animation: square_bounce1 0.7s infinite alternate;
+}
+.squareRed img:nth-child(3){
+	position: absolute;
+	width: 7vw;
+	top: 30vw;
+	right: 4vw;
+	animation: square_bounce3 0.7s infinite alternate;
+}
+img.cloudL{
+	position: absolute;
+	width: 12vw;
+	right: 30vw;
+	animation: cloudL 2s infinite alternate;
+}
+img.cloudR {
+	right: 6vw;
+	position: absolute;
+	width: 12vw;
+	top: 3vw;
+	animation: cloudR 1.5s infinite alternate;
+}
+img.UFO {
+	animation: bounce 2s infinite alternate;
+}
+
+@keyframes cloudL {
+  0% {
+  	transform: translate(2px, 0px);
+  	transform: rotate(1deg);
+  }
+  50% {
+    transform: translate(0px, 7px);
+    transform: rotate(-1deg);
+  }
+  100% {
+  	transform: translate(1px, 0px);
+  	transform: rotate(2deg);
+  }
+}
+
+@keyframes cloudR {
+  0% {
+  	transform: translate(2px, 0px);
+  	transform: rotate(-1deg);
+  }
+  50% {
+    transform: translate(0px, 7px);
+    transform: rotate(1deg);
+  }
+  100% {
+  	transform: translate(1px, 0px);
+  	transform: rotate(-2deg);
+  }
+}
 
 @keyframes shadow {
   from {
@@ -203,9 +292,27 @@ header {
 
 @keyframes bounce {
   from {
-    margin-top: 0px;
+    transform: translate(0px, 0px);
   }
   to {
-    margin-top: -20px;
+    transform: translate(0px, 5px);
   }
+}
+
+@keyframes square_bounce3 {
+	0% {
+		transform: translateY(2.5px);
+	}
+}
+@keyframes square_bounce1 {
+	0% {
+		transform: translateY(5px);
+	}
+
+}
+@keyframes square_bounce2 {
+	0% {
+		transform: translateY(10px);
+	}
+
 }
