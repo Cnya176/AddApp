@@ -202,40 +202,40 @@ header {
 }
 .TopMenu {
 	position: absolute;
-    left: 30px;
-    width: 300px;
-    height: 250px;
+    left: 3vw;
+    width: 14vw;
+    height: 13vw;
 }
 .TopMenu > img:nth-child(1) {
 	position: absolute;
 	width: 5vw;
     top: 4vw;
     transition: 0.5s;
-    left: 30px;
+    left: 1.4vw;
 }
 .TopMenu > img:nth-child(2) {
 	position: absolute;
 	width: 5vw;
     top: 3.5vw;
     transition: 0.5s;
-    left: 30px;
+    left: 1.4vw;
 }
 .TopMenu > img:nth-child(3) {
 	position: absolute;
-	left: 30px;
+	left: 1.4vw;
     top: 3vw;
     width: 5vw;
     transition: 0.5s;
 }
 .TopMenu:hover img:nth-child(1) {
-	transform: translate(150px, 100px);
+	transform: translate(3vw, 5vw);
 }
 .TopMenu:hover img:nth-child(2) {
 	transition-delay: 0.1s;
-	transform: translate(150px, 50px);
+	transform: translate(3vw, 2.5vw);
 }
 .TopMenu:hover img:nth-child(3) {
-	transform: translate(150px);
+	transform: translate(3vw);
 	transition-delay: 0.2s;
 }
 img.cloudL{
@@ -273,6 +273,83 @@ img.UFO {
 	width: 20vw;
 	position: absolute;
 	z-index: 17;
+}
+.menu {
+	position: absolute;
+    width: 14vw;
+    height: 13vw;
+}
+.menu button:nth-child(1){
+	position: absolute;
+	font-family: SF Pro Text;
+	color: white;
+	text-shadow: ;
+	left: 2.5vw;
+	top: 3vw;
+	opacity: 0;
+	transition: 0.5s;
+	text-shadow: 0.1em 0.1em 0.2em black;
+}
+.menu button:nth-child(2){
+	position: absolute;
+	font-family: SF Pro Text;
+	color: white;
+	text-shadow: ;
+	left: 2.5vw;
+	top: 3.5vw;
+	opacity: 0;
+	transition: 0.5s;
+	text-shadow: 0.1em 0.1em 0.2em black ;
+}
+.menu button:nth-child(3){
+	position: absolute;
+	font-family: SF Pro Text;
+	color: white;
+	text-shadow: ;
+	left: 2.5vw;
+	top: 4vw;
+	opacity: 0;
+	transition: 0.5s;
+	text-shadow: 0.1em 0.1em 0.2em black ;
+}
+.menu:hover button:nth-child(1){
+	transform: translate(3vw);
+	transition-delay: 0.2s;
+	opacity: 1;
+}
+.menu:hover button:nth-child(2){
+	transform: translate(3vw, 2.5vw);
+	transition-delay: 0.1s;
+	opacity: 1;
+}
+.menu:hover button:nth-child(3){
+	transform: translate(3vw, 5vw);
+	opacity: 1;
+}
+.form h1{
+	position: absolute;
+	font-family: SF Pro Text;
+	text-align: center;
+	margin: 0;
+}
+.form div:nth-child(1){
+	position: absolute;
+	background: #c4c4c4;
+	opacity: 38%;
+	width: 15vw;
+	height: 1.7vw;
+	min-width: 300px;
+	border-radius: 30px; 
+
+}
+.form div:nth-child(2){
+	position: absolute;
+	background: #c4c4c4;
+	opacity: 38%;
+	width: 15vw;
+	height: 1.7vw;
+	min-width: 300px;
+	border-radius: 30px;
 }
 @keyframes cloudL {
   0% {
@@ -366,3 +443,116 @@ img.UFO {
 		transform: rotate(-9deg);
 	}
 }
+/*---------------------Кнопка-входа-----------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.log-in {
+  width: 12rem;
+  height: auto;
+}
+button.log-in .circle {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #C4C4C4;
+  opacity: 0.4;
+  border-radius: 1.625rem;
+}
+button.log-in .circle .icon {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+button.log-in .circle .icon.arrow {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.log-in .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+button.log-in .button-text {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: white;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: white;
+}
+
+@supports (display: grid) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: ". main main ." ". main main .";
+  }
+
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+    top: 10vw;
+    left: 18vw;
+    position: absolute;
+  }
+}
+/*------------------------------------------------------------------------*/
