@@ -20,30 +20,16 @@ header {
 	margin: 0px;
 }
 
-.TopHeader > h1{
+.TopHeader > img:nth-child(1){
 	position: absolute;
-	margin: 0px;
+	top: 19vw;
 	width: 17vw;
-	height: 5vw;
-	left: 45vw;
-	top: 0px;
-	z-index: 999;
-	background: linear-gradient(180deg, #FFC700 0%, #520099 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-family: SF Pro Text;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 4vw;
-	line-height: 112px;
-	display: flex;
-	align-items: center;
-	text-align: center;
+	left: 17vw;
 }
 
 .TopHeader > img{
 	position: absolute;
-	height: 30vw;
+	width: 100vw;
 	right: 0vw;
 }
 .stars {
@@ -175,56 +161,95 @@ header {
 .squareblue img:nth-child(1){
 	position: absolute;
 	width: 5vw;
-	top: 6vw;
-	left: 3vw;
+	top: 21vw;
+	left: 11vw;
 	animation: square_bounce1 0.7s infinite alternate;
 }
 .squareblue img:nth-child(2){
 	position: absolute;
 	width: 5vw;
-	top: 5.5vw;
-	left: 3vw;
+	top: 20.5vw;
+	left: 11vw;
 	animation: square_bounce2 0.7s infinite alternate;
 }
 .squareblue img:nth-child(3){
 	position: absolute;
 	width: 5vw;
-	top: 6.5vw;
-	left: 3vw;
+	top: 21.5vw;
+	left: 11vw;
 	animation: square_bounce3 0.7s infinite alternate;
 }
 .squareRed img:nth-child(1){
 	position: absolute;
 	width: 7vw;
-	top: 28vw;
+	top: 40.5vw;
 	right: 4vw;
 	animation: square_bounce2 0.7s infinite alternate;
 }
 .squareRed img:nth-child(2){
 	position: absolute;
 	width: 7vw;
-	top: 29vw;
+	top: 41vw;
 	right: 4vw;
 	animation: square_bounce1 0.7s infinite alternate;
 }
 .squareRed img:nth-child(3){
 	position: absolute;
 	width: 7vw;
-	top: 30vw;
+	top: 41.5vw;
 	right: 4vw;
 	animation: square_bounce3 0.7s infinite alternate;
 }
+.TopMenu {
+	position: absolute;
+    left: 30px;
+    width: 300px;
+    height: 250px;
+}
+.TopMenu > img:nth-child(1) {
+	position: absolute;
+	width: 5vw;
+    top: 4vw;
+    transition: 0.5s;
+    left: 30px;
+}
+.TopMenu > img:nth-child(2) {
+	position: absolute;
+	width: 5vw;
+    top: 3.5vw;
+    transition: 0.5s;
+    left: 30px;
+}
+.TopMenu > img:nth-child(3) {
+	position: absolute;
+	left: 30px;
+    top: 3vw;
+    width: 5vw;
+    transition: 0.5s;
+}
+.TopMenu:hover img:nth-child(1) {
+	transform: translate(150px, 100px);
+}
+.TopMenu:hover img:nth-child(2) {
+	transition-delay: 0.1s;
+	transform: translate(150px, 50px);
+}
+.TopMenu:hover img:nth-child(3) {
+	transform: translate(150px);
+	transition-delay: 0.2s;
+}
 img.cloudL{
 	position: absolute;
-	width: 12vw;
-	right: 30vw;
+	width: 10vw;
+	right: 35vw;
+	top: 19vw;
 	animation: cloudL 2s infinite alternate;
 }
 img.cloudR {
-	right: 6vw;
 	position: absolute;
 	width: 12vw;
-	top: 3vw;
+	right: 3vw;
+	top: 19vw;
 	animation: cloudR 1.5s infinite alternate;
 }
 img.UFO {
@@ -232,7 +257,7 @@ img.UFO {
 }
 .chuzhak {
 	position: absolute;
-	top: 13vw;
+	top: 50vw;
 	left: 12vw;
 	transform: rotate(50deg);
 }

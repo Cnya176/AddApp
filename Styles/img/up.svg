@@ -1,10 +1,10 @@
-<svg width="1291" height="535" viewBox="0 0 1291 535" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1920" height="764" viewBox="0 0 1920 764" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d)">
-<path d="M241.5 199.5C182 208.546 40.9295 164.485 4 -9.01263V-49H1291V239.755C1291 269.5 1278.5 325.53 1178.91 391.246C964.5 532.721 823.502 611.5 540.559 377.404C436.262 291.112 460.484 166.207 241.5 199.5Z" fill="url(#paint0_linear)"/>
+<path d="M419.531 273.487C64.9219 327.398 -180.5 576 -237.919 72.2399L-237.919 -8L1921.5 -1.5V424.5C1921.5 462.996 2079.05 466 1904.5 581.175C1627.01 764.272 1444.53 866.227 1078.35 563.261C943.369 451.583 702.938 230.4 419.531 273.487Z" fill="url(#paint0_linear)"/>
 </g>
-<path d="M886.5 525.5C815.5 528.5 779 519.5 701 485.5L862.58 222L1028 482C1001 494.5 959 517 886.5 525.5Z" fill="#00FFF0" fill-opacity="0.35"/>
+<path d="M1528.01 754.279C1448.41 762.044 1367.53 743.278 1285.99 703.158L1495.11 362.139L1709.19 698.629C1674.25 714.806 1612.78 745.867 1528.01 754.279Z" fill="#00FFF0" fill-opacity="0.35"/>
 <defs>
-<filter id="filter0_d" x="0" y="-49" width="1295" height="583.197" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="-241.919" y="-8" width="2232.66" height="771.829" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dy="4"/>
@@ -13,7 +13,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
-<linearGradient id="paint0_linear" x1="647.5" y1="-49" x2="647.5" y2="514" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear" x1="1216.75" y1="11.4135" x2="1216.75" y2="740.043" gradientUnits="userSpaceOnUse">
 <stop stop-color="#162A43"/>
 <stop offset="1" stop-color="#642459"/>
 </linearGradient>
