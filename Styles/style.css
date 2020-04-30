@@ -147,7 +147,7 @@ header {
 	transition: 0.3s;
 }
 .square:hover img:nth-child(1){
-	transform: translate(0px, -100px);
+	transform: translate(0px, -90px);
     opacity: 1;
 }
 .square:hover img:nth-child(2){
@@ -331,12 +331,17 @@ img.UFO {
 	font-family: SF Pro Text;
 	text-align: center;
 	margin: 0;
+	top: 0.25vw;
+	width: 15vw;
+	font-size: 1.3em;
 }
 .form div:nth-child(1){
 	position: absolute;
 	background: #c4c4c4;
 	opacity: 38%;
 	width: 15vw;
+	top: 1vw;
+	left: 14.9vw;
 	height: 1.7vw;
 	min-width: 300px;
 	border-radius: 30px; 
@@ -347,6 +352,8 @@ img.UFO {
 	background: #c4c4c4;
 	opacity: 38%;
 	width: 15vw;
+	top: 3.5vw;
+	left: 14.9vw;
 	height: 1.7vw;
 	min-width: 300px;
 	border-radius: 30px;
@@ -550,8 +557,8 @@ button:hover .button-text {
     grid-area: main;
     align-self: center;
     justify-self: center;
-    top: 10vw;
-    left: 18vw;
+    top: 6vw;
+    left: 18.5vw;
     position: absolute;
   }
 }
