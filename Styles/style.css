@@ -1,4 +1,7 @@
 ::-webkit-scrollbar { width: 0;}
+::-webkit-input-placeholder {
+	color: white;
+}
 
 body {
 	margin: 0px;
@@ -203,7 +206,7 @@ header {
 .TopMenu {
 	position: absolute;
     left: 3vw;
-    width: 14vw;
+    width: 11vw;
     height: 13vw;
 }
 .TopMenu > img:nth-child(1) {
@@ -326,38 +329,13 @@ img.UFO {
 	transform: translate(3vw, 5vw);
 	opacity: 1;
 }
-.form h1{
+.form {
 	position: absolute;
-	font-family: SF Pro Text;
-	text-align: center;
-	margin: 0;
-	top: 0.25vw;
-	width: 15vw;
-	font-size: 1.3em;
+	width: 17vw;
+	height: 13vw;
+	left: 14vw;
 }
-.form div:nth-child(1){
-	position: absolute;
-	background: #c4c4c4;
-	opacity: 38%;
-	width: 15vw;
-	top: 1vw;
-	left: 14.9vw;
-	height: 1.7vw;
-	min-width: 300px;
-	border-radius: 30px; 
 
-}
-.form div:nth-child(2){
-	position: absolute;
-	background: #c4c4c4;
-	opacity: 38%;
-	width: 15vw;
-	top: 3.5vw;
-	left: 14.9vw;
-	height: 1.7vw;
-	min-width: 300px;
-	border-radius: 30px;
-}
 @keyframes cloudL {
   0% {
   	transform: translate(2px, 0px);
@@ -476,6 +454,9 @@ button.log-in {
   width: 12rem;
   height: auto;
 }
+button.log-in:active {
+	
+}
 button.log-in .circle {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -484,9 +465,9 @@ button.log-in .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #C4C4C4;
-  opacity: 0.4;
-  border-radius: 1.625rem;
+  background: #5E2457;
+  opacity: 1;
+  border-radius: 50px;
 }
 button.log-in .circle .icon {
   -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -535,6 +516,8 @@ button.log-in .button-text {
 }
 button:hover .circle {
   width: 100%;
+  background: #AE4198;
+  opacity: .8;
 }
 button:hover .circle .icon.arrow {
   background: #fff;
@@ -557,9 +540,54 @@ button:hover .button-text {
     grid-area: main;
     align-self: center;
     justify-self: center;
-    top: 6vw;
-    left: 18.5vw;
-    position: absolute;
   }
 }
 /*------------------------------------------------------------------------*/
+.input-form {
+	margin: 1vw 0vw;
+	padding: 0;
+	text-align: center;
+}
+.loading span {
+	width: 1.5rem;
+	height: 1.5rem;
+	position: absolute;
+	transition: 0.3s;
+}
+.input-form input {
+	padding: 10px;
+	width: 15vw;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	background: none;
+	outline: none;
+	border: 0.5px double;
+	border-radius: 50px;
+	border-color: #C4C4C4;
+	transition: 0.5s;
+}
+.input-form input:hover {
+	box-shadow: 0 0 15px 1px white;
+}
+.input-form input[type="text"]:focus, .input-form input[type="password"]:focus {
+	border: 1px solid #AE4198;
+	box-shadow: 0 0 15px 1px #AE4198;
+}
+.submit-form {
+	text-align: center;
+	margin-bottom: 1vw;
+}
+.submit-form input {
+
+}
+.form a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+}
+.form a:hover {
+	color: #00fff0;
+}
